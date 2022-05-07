@@ -34,7 +34,11 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "expo",
+    "cache",
+    "image",
+    "loading-indicator"
   ],
   "repository": "https://github.com/devstark-com/expo-smart-image",
   "author": "Andrey Grach <andrew.g@devstark.com> (https://github.com/andrewg1218)",
