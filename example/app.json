@@ -1,0 +1,22 @@
+{
+  "name": "expo-smart-image-example",
+  "displayName": "ExpoSmartImage Example",
+  "expo": {
+    "name": "expo-smart-image-example",
+    "slug": "expo-smart-image-example",
+    "description": "Example app for expo-smart-image",
+    "privacy": "public",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
