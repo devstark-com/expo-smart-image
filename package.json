@@ -36,13 +36,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/laneboyandrew/expo-smart-image",
-  "author": "Andrey Grach <andrejgrach@icloud.com> (https://github.com/laneboyandrew)",
+  "repository": "https://github.com/devstark-com/expo-smart-image",
+  "author": "Andrey Grach <andrew.g@devstark.com> (https://github.com/andrewg1218)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/laneboyandrew/expo-smart-image/issues"
+    "url": "https://github.com/devstark-com/expo-smart-image/issues"
   },
-  "homepage": "https://github.com/laneboyandrew/expo-smart-image#readme",
+  "homepage": "https://github.com/devstark-com/expo-smart-image/#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
