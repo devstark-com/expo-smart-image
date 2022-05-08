@@ -34,8 +34,8 @@ interface ImageProps {
   tint?: 'dark' | 'light' | string;
   onError: (error: { nativeEvent: { error: unknown } }) => void;
   intensity?: Animated.Value;
-  loadingIndicatorCX: number;
-  loadingIndicatorCY: number;
+  loadingIndicatorCX?: number;
+  loadingIndicatorCY?: number;
 }
 
 interface ImageState {
@@ -189,8 +189,8 @@ export default class BlurImage extends React.Component<ImageProps, ImageState> {
               >
                 <Svg>
                   <Circle
-                    cx={loadingIndicatorCX / 2}
-                    cy={loadingIndicatorCY / 2}
+                    cx={loadingIndicatorCX ? loadingIndicatorCX / 2 : 0}
+                    cy={loadingIndicatorCY ? loadingIndicatorCY / 2 : 0}
                     r={R}
                     stroke={
                       loadingIndicatorStyle?.backgroundStrokeColor
@@ -204,8 +204,8 @@ export default class BlurImage extends React.Component<ImageProps, ImageState> {
                     }
                   />
                   <Circle
-                    cx={loadingIndicatorCX / 2}
-                    cy={loadingIndicatorCY / 2}
+                    cx={loadingIndicatorCX ? loadingIndicatorCX / 2 : 0}
+                    cy={loadingIndicatorCY ? loadingIndicatorCY / 2 : 0}
                     r={R}
                     stroke={
                       loadingIndicatorStyle?.strokeColor
@@ -244,8 +244,8 @@ export default class BlurImage extends React.Component<ImageProps, ImageState> {
               >
                 <Svg>
                   <Circle
-                    cx={loadingIndicatorCX / 2}
-                    cy={loadingIndicatorCY / 2}
+                    cx={loadingIndicatorCX ? loadingIndicatorCX / 2 : 0}
+                    cy={loadingIndicatorCY ? loadingIndicatorCY / 2 : 0}
                     r={R}
                     stroke={
                       loadingIndicatorStyle?.backgroundStrokeColor
@@ -259,8 +259,8 @@ export default class BlurImage extends React.Component<ImageProps, ImageState> {
                     }
                   />
                   <Circle
-                    cx={loadingIndicatorCX / 2}
-                    cy={loadingIndicatorCY / 2}
+                    cx={loadingIndicatorCX ? loadingIndicatorCX / 2 : 0}
+                    cy={loadingIndicatorCY ? loadingIndicatorCY / 2 : 0}
                     r={R}
                     stroke={
                       loadingIndicatorStyle?.strokeColor

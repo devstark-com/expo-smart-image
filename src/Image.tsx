@@ -66,8 +66,8 @@ const Image = ({
   if (enableLoadingIndicator === undefined) {
     enableLoadingIndicator = true;
   }
-  const loadingIndicatorCX = style?.width ? style?.width : width * 0.8;
-  const loadingIndicatorCY = style?.height ? style?.height : width * 0.8;
+  const loadingIndicatorCX = style?.width ? style?.width : undefined;
+  const loadingIndicatorCY = style?.height ? style?.height : undefined;
   const AnimatedImage = Animated.createAnimatedComponent(BlurImage);
   const pinchHandler =
     useAnimatedGestureHandler<PinchGestureHandlerGestureEvent>({
@@ -110,8 +110,8 @@ const Image = ({
       <View {...{ style }}>
         <BlurImage
           style={{
-            width: style?.width ? style?.width : width * 0.8,
-            height: style?.height ? style?.height : width * 0.8,
+            width: style?.width ? style?.width : undefined,
+            height: style?.height ? style?.height : undefined,
           }}
           uri={uri}
           preview={preview}
@@ -133,8 +133,8 @@ const Image = ({
             <AnimatedImage
               style={[
                 {
-                  width: style?.width ? style?.width : width * 0.8,
-                  height: style?.height ? style?.height : width * 0.8,
+                  width: style?.width ? style?.width : undefined,
+                  height: style?.height ? style?.height : undefined,
                 },
                 rStyle,
               ]}
