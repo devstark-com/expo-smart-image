@@ -1,6 +1,6 @@
 {
   "name": "expo-smart-image",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "React Native Image Cache, Progressive Loading, Zoom, Loading Indicator based on Expo",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
