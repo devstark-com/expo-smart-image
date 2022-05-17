@@ -12,9 +12,8 @@ npm install expo-smart-image
 
 ```js
 import { Image } from "expo-smart-image";
-
 ```
-# Props
+### Props
 | Props                  | Default |              Options |
 |------------------------|:-------:|---------------------:|
 | tint                   |  dark   | light, dark, default |
@@ -31,7 +30,25 @@ import { Image } from "expo-smart-image";
           size: 300,
         }}
 ```
+### CacheManager
 
+Get the local image from a remote URI
+
+```js
+import {CacheManager} from "react-native-expo-image-cache";
+
+const {uri} = this.props;
+const path = await CacheManager.get(uri).getPath();
+// if path is undefined, the image download has failed
+```
+
+You can also clear the local cache:
+
+```js
+import {CacheManager} from "react-native-expo-image-cache";
+
+await CacheManager.clearCache();
+```
 ## Contributing
 
 See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
