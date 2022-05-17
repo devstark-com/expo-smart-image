@@ -35,7 +35,7 @@ import { Image } from "expo-smart-image";
 Get the local image from a remote URI
 
 ```js
-import {CacheManager} from "react-native-expo-image-cache";
+import {CacheManager} from "expo-smart-image";
 
 const {uri} = this.props;
 const path = await CacheManager.get(uri).getPath();
@@ -45,7 +45,7 @@ const path = await CacheManager.get(uri).getPath();
 You can also clear the local cache:
 
 ```js
-import {CacheManager} from "react-native-expo-image-cache";
+import {CacheManager} from "expo-smart-image";
 
 await CacheManager.clearCache();
 ```
